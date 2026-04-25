@@ -16,10 +16,6 @@ struct ContentView: View {
     var body: some View {
         Spacer()
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
             HStack {
                 Spacer()
                 Text(display)
@@ -42,11 +38,6 @@ struct ContentView: View {
         }
         .padding()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     func buttonTapped(_ value: String) {
         switch value {
         case "0"..."9":
